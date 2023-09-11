@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  
+}
+body{
+
+    background-size: 1933px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 210px;
+    margin-left: 10px;
+    margin-bottom: 405px;
+       opacity: 0.7;
+    margin-left: 12px;
+    background-image:linear-gradient(#007bff, #6610f2, #6f42c1,#e83e8c);
+}
+
+.btn-login{
+    padding: 25px,45px;
+    background-color:#1c87c9;
+    
+    cursor: pointer;
+    width: 50px;
+    left: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    width: 80px;
+   
+    
+}
+
+ 
+.popup{
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: -1; ;
+    top: 0%;
+    height: 100vh;
+    opacity: 0;
+    transition: 1s;
+
+}
+.showpopup{
+    opacity: 1;
+    z-index: 1;
+}
+.login{
+    line-height: 23px;
+    width: 350px;
+    height: 535px;
+    background-image:linear-gradient(#007bff, #6610f2,  #6f42c1,#e83e8c);
+    border: 2px 2px 2px dashed ;
+    padding: 30px 20px;
+    position: absolute;
+    transition: 2s;
+    left: 50%;
+    top: -50%;
+    z-index: 9;
+    box-shadow: #6610f2;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 10px 3px #ccc; 
+}
+.showlogin{
+    top: 50%;
+}
+.login span{
+    position: absolute;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    top: 0px;
+    text-align: center;
+    color:#2c2c2c;;
+    line-height: 30px;
+    cursor: pointer;
+}
+input[type=text],[type=email]{
+    width: 100%;
+  
+    height: 35px;
+    border: 2px solid red;
+    border-radius: 4px;
+    border: none;
+    background-color: #3CBC8D;
+    color: white;
+
+}
+
+.login button{
+    background-color:black;
+    color: white;
+    padding: 10px 15px;
+    width: 100%;
+    height: 30px;
+
+}
+.login textarea {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    background-color: #3CBC8D;
+}
+
+
+.fa {
+    padding: 7%;
+    font-size: 3px;
+    width: 1px;
+    text-align: center;
+   
+  
+    float: left;
+    margin: 3px;
+    
+    display: inline-block;
+  }
+  
+  .fa-facebook:hover {
+      opacity: 0.7;
+      background-color: #007bff;
+      
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    display: flex;
+    border: 1px solid black;
+    width: 13px;
+    height: 13px;
+    display: inline;
+    box-shadow: #1c87c9;
+    
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    border: 1px solid black;
+    color: white;
+    box-shadow: #1c87c9;
+    width: 13px;
+    height: 13px;
+  
+  }
+.fa-twitter:hover {
+    opacity: 0.7;
+    background-color: #007bff;
+    display: inline;
+    
+}
+  

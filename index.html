@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login model</title>
+</head>
+<body>
+ 
+    
+    <button class="btn-login" name="btn-login button1">Login</button>
+   
+    <div class="popup"></div>
+    <div class="login">
+    <span>&times;</span>
+
+    <h1>Welcome to Mystical Production</h1>
+
+    <form action="#" method="">
+        <div class="tooltip">
+            <label for="" >Name*</label>
+            <input type="text" name="name" placeholder="Enter Name">
+        </div>
+        <div>
+            <label for="" >LastName*</label>
+            <input type="text" name="name" placeholder="Enter Name">
+        </div>
+    
+    
+        <div>
+            <label for="">Email*</label>
+            <input type="email" name="email" placeholder="Email address">
+        </div>
+
+        <div > 
+            <label for="">Phone*</label>
+            <input type="text" name="Phone" placeholder="Enter number">
+        </div>
+        
+
+        <div>
+            <label for="">Password*</label>
+            <input type="text" name="password" placeholder="Enter password">
+        </div>
+          
+        
+        <div>
+            <label for="">Message*</label>
+            <textarea name="message" placeholder="Type something"></textarea>
+        </div>
+        <input type="checkbox" value="lsRememberMe" id="rememberMe" style="display: inline-block;"> <label>Remember me</label>
+        <button type="submit">Submit</button>
+
+        <p>Not a member ? <a href="sign.in">sign with:</a></p>
+       <div class="fa">
+       <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/login?lang=en" class="fa fa-twitter"></a>
+        </div>
+          
+    </form>
+
+</div>
+</body>
+
+<script>
+    //show function
+    function showmodel(){
+    document.querySelector('.popup').classList.add('showpopup');
+    document.querySelector('.login').classList.add('showlogin');
+}
+
+
+//remove function
+function removemodel(){
+    document.querySelector('.popup').classList.remove('showpopup');
+    document.querySelector('.login').classList.remove('showlogin');
+}
+var btnlogin=document.querySelector(".btn-login");
+btnlogin.addEventListener("click",showmodel);
+
+//for remove the login form after click
+var spn=document.querySelector("span");
+spn.addEventListener("click",removemodel);
+
+</script>
+</html>
